@@ -1,0 +1,285 @@
+<div class="notebook">
+
+<div class="nb-cell markdown" name="md5">
+Projekt PROLOG
+Zakomentowane czesci programu pokazuja droge do uzyskania przez nas pozadanego skutku.
+</div>
+
+<div class="nb-cell program" name="p2">
+%baza danych
+%:-dynamic cena_za_m2/1.
+%:-dynamic lokalizacja/1.
+%:-dynamic metraz/1.
+%:-dynamic wykonczenie/1.
+%:-dynamic dezycja/1.
+%cena_za_m2(wysoka).
+%cena_za_m2(bardzo_wysoka).
+%cena_za_m2(niska).
+%cena_za_m2(srednia).
+%
+%lokalizacja(centrum).
+%lokalizacja(obrzeza).
+%lokalizacja(srednia).
+%
+%metraz(kawalerka).
+%metraz(dwa_pokoje).
+%metraz(wiecej_niz_3_pokoje).
+%
+%wykonczenie(wys_standard).
+%wykonczenie(srednie).
+%wykonczenie(do_remontu).
+%
+%dezycja(kupic).
+%decyzja(rozwazyc).
+%decyzja(odrzucic).
+</div>
+
+<div class="nb-cell program" name="p3">
+%:-dynamic fakt/2.
+%
+%fakt(cena_za_m2,bardzo_wysoka).
+%fakt(decyzja,kupic).
+%
+%decyzja(odrzucic) :- fakt(cena_za_m2,bardzo_wysoka); fakt(cena_za_m2,wysoka).
+%decyzja(rozwazyc) :- fakt(cena_za_m2,srednia);
+%    fakt(cena_za_m2,niska),fakt(lokalizacja,obrzeza);
+%    fakt(cena_za_m2,niska),fakt(lokalizacja,srednia),fakt(metraz,wiecej_niz_3_pokoje),fakt(typ,stare_budownictwo),fakt(wykonczenie,srednie);
+
+%    fakt(cena_za_m2,niska),fakt(lokalizacja,srednia),fakt(metraz,wiecej_niz_3_pokoje),fakt(typ,stare_budownictwo),fakt(wykonczenie,do_remontu).
+%decyzja(kupic) :-  fakt(cena_za_m2,niska),fakt(lokalizacja,srednia),fakt(metraz,kawalerka);
+%    fakt(cena_za_m2,niska),fakt(lokalizacja,srednia),fakt(metraz,kawalerka);
+%    fakt(cena_za_m2,niska),fakt(lokalizacja,srednia),fakt(metraz,dwa_pokoje);
+%    fakt(cena_za_m2,niska),fakt(lokalizacja,srednia),fakt(metraz,wiecej_niz_3_pokoje),fakt(typ,stare_budownictwo),fakt(wykonczenie,wysoki_standard);
+%    fakt(cena_za_m2,niska),fakt(lokalizacja,srednia),fakt(metraz,wiecej_niz_3_pokoje),fakt(typ,nowe_budownictwo).
+%
+%
+%
+%
+%sprawdz(kupic) :- fakt(decyzja,kupic);decyzja(kupic).
+%sprawdz(rozwazyc) :- fakt(decyzja,rozwazyc);decyzja(rozwazyc).
+%sprawdz(odrzucic) :- fakt(decyzja,odrzucic);decyzja(rozwazyc).
+</div>
+
+<div class="nb-cell program" name="p4">
+%:-dynamic fakt/2.
+%
+%
+%fakt(cena_za_m2,niska).
+%fakt(lokalizacja,srednia).
+%fakt(metraz,wiecej_niz_3_pokoje).
+%
+%decyzja(odrzucic) :- fakt(cena_za_m2,bardzo_wysoka); 
+%    fakt(cena_za_m2,wysoka).
+%decyzja(rozwazyc) :- fakt(cena_za_m2,srednia).
+%
+%opcja(lokalizacja) :- fakt(cena_za_m2,niska).
+%
+%decyzja(kupic) :- opcja(lokalizacja),fakt(lokalizacja,centrum).
+%decyzja(rozwazyc) :- opcja(lokalizacja),fakt(lokalizacja,obrzeza).
+%
+%opcja(metraz) :- opcja(lokalizacja),fakt(lokalizacja,srednia).
+%
+%decyzja(kupic) :- opcja(metraz),fakt(metraz,dwa_pokoje);opcja(metraz),fakt(metraz,kawalerka).
+%
+%opcja(typ) :- opcja(metraz),fakt(metraz,wiecej_niz_3_pokoje).
+%
+%decyzja(kupic) :- opcja(typ),fakt(typ,nowe_budownictwo).
+%
+%opcja(wykonczenie) :- opcja(typ),fakt(typ,stare_budownictwo).
+%
+%decyzja(kupic) :- opcja(wykonczenie),fakt(wykonczenie,wysoki_standard).
+%
+%decyzja(rozwazyc) :- opcja(wykonczenie),fakt(wykonczenie,do_remontu);
+%    opcja(wykonczenie),fakt(wykonczenie,srednie).
+</div>
+
+<div class="nb-cell program" name="p5">
+%:-dynamic fakt/2.
+%
+%
+%fakt(cena_za_m2,niska).
+%fakt(lokalizacja,srednia).
+%fakt(metraz,wiecej_niz_3_pokoje).
+%
+%opcja(L) :- fakt(cena_za_m2,niska).
+%opcja(M) :- opcja(L), fakt(lokalizacja,srednia).
+%opcja(T) :- opcja(M), fakt(metraz,wiecej_niz_3_pokoje).
+%opcja(W) :- opcja(T), fakt(typ,stare_budownictwo).
+%
+%
+%decyzja(odrzucic) :- fakt(cena_za_m2,bardzo_wysoka); 
+%    fakt(cena_za_m2,wysoka).
+%decyzja(rozwazyc) :- fakt(cena_za_m2,srednia);
+%    opcja(L),fakt(lokalizacja,obrzeza);
+%    opcja(W),fakt(wykonczenie,do_remontu);
+%    opcja(W),fakt(wykonczenie,srednie).
+%
+
+
+%decyzja(kupic) :- opcja(lokalizacja),fakt(lokalizacja,centrum);
+%    opcja(M),fakt(metraz,dwa_pokoje);opcja(metraz),fakt(metraz,kawalerka);
+%    opcja(T),fakt(typ,nowe_budownictwo);
+%    opcja(W),fakt(wykonczenie,wysoki_standard).
+</div>
+
+<div class="nb-cell program" name="p6">
+%:-dynamic fakt/2.
+%
+%fakt(wykonczenie,wysoki_standard).
+%
+%regula(sprawdzam_wykonczenie) :- fakt(wykonczenie,X),assert(fakt(typ,stare_budownictwo)).
+%regula(sprawdzam_metraz) :- fakt(typ,X),assert(fakt(metraz,wiecej_niz_3_pokoje)).
+%regula(sprawdzam_lokalizacje) :- fakt(metraz,X),assert(fakt(lokalizacja,srednia)).
+%regula(sprawdzam_cena_za_m2) :- fakt(lokalizacja,X),assert(fakt(cena_za_m2,niska)).
+%regula(sprawdzam_decyzja_odrzut) :- fakt(decyzja,odrzucic),assert(fakt(cena_za_m2,bardzo_wysoka)),assert(fakt(cena_za_m2,wysoka)).
+%regula(sprawdzam_decyzja_rozwaz) :- fakt(decyzja,rozwazyc),
+%    assert(fakt(cena_za_m2,srednia)),
+%    assert(fakt(lokalizacja,obrzeza)),
+%    assert(fakt(wykonczenie,srednie)),
+%    assert(fakt(wykonczenie,do_remontu)).
+%regula(sprawdzam_decyzja_kup) :- fakt(decyzja,kupic),
+%    assert(fakt(metraz,dwa_pokoje)),
+%    assert(fakt(lokalizacja,centrum)),
+%    assert(fakt(wykonczenie,wysoki_standard)),
+%    assert(fakt(typ,nowe_budownictwo)),
+%    assert(fakt(metraz,kawalerka)).
+%
+%sprawdz(sprawdzam_wykonczenie):- fakt(typ,stare_budownictwo) ; not(fakt(typ,stare_budownictwo)), regula(sprawdzam_wykonczenie).
+%sprawdz(sprawdzam_metraz):- fakt(metraz,wiecej_niz_3_pokoje) ; not(fakt(metraz,wiecej_niz_3_pokoje)), regula(sprawdzam_metraz).
+%sprawdz(sprawdzam_lokalizacje):- fakt(lokalizacja,srednia) ; not(fakt(lokalizacja,srednia)), regula(sprawdzam_lokalizacje).
+%sprawdz(sprawdzam_cena_za_m2):- fakt(cena_za_m2,niska) ; not(fakt(cena_za_m2,niska)), regula(sprawdzam_cena_za_m2).
+%sprawdz(sprawdzam_decyzja_odrzut):- fakt(cena_za_m2,bardzo_wysoka);fakt(cena_za_m2,wysoka); not(fakt(cena_za_m2,bardzo_wysoka)),regula(sprawdzam_decyzja_odrzut);not(fakt(cena_za_m2,wysoka)),regula(sprawdzam_decyzja_odrzut).
+%
+%sprawdz(sprawdzam_decyzja_rozwaz):- fakt(cena_za_m2,srednia) ; not(fakt(cena_za_m2,srednia)), regula(sprawdzam_decyzja_rozwaz);
+%    fakt(lokalizacja,obrzeza),not(fakt(lokalizacja,obrzeza)),regula(sprawdzam_decyzja_rozwaz);
+%    fakt(wykonczenie,srednie),not(fakt(wykonczenie,srednie)),regula(sprawdzam_decyzja_rozwaz);
+%    fakt(wykonczenie,do_remontu),not(fakt(wykonczenie,do_remontu)),regula(sprawdzam_decyzja_rozwaz).
+%
+%sprawdz(sprawdzam_decyzja_kup):- fakt(metraz,dwa_pokoje) ; not(fakt(metraz,dwa_pokoje)), regula(sprawdzam_decyzja_kup);
+%    fakt(lokalizacja,centrum) ; not(fakt(lokalizacja,centrum)), regula(sprawdzam_decyzja_kup);
+%  fakt(metraz,kawalerka) ; not(fakt(metraz,kawalerka)), regula(sprawdzam_decyzja_kup);
+%    fakt(wykonczenie,wysoki_standard) ; not(fakt(wykonczenie,wysoki_standard)), regula(sprawdzam_decyzja_kup);
+%   fakt(typ,nowe_budownictwo) ; not(fakt(typ,nowe_budownictwo)), regula(sprawdzam_decyzja_kup).
+</div>
+
+<div class="nb-cell program" name="p7">
+:-dynamic fakt/2.
+:-dynamic inuse/2.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% NASZA BAZA DANYCH %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%niepotrzebne zakomentowac
+fakt(lokalizacja,srednia). %Przyklad 1
+%fakt(wykonczenie,srednie). %Przyklad 2
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% REGULY %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+regula(typ,stare_budownictwo) :- not(inuse(typ,stare_budownictwo)),assert(inuse(typ,stare_budownictwo)),(fakt(wykonczenie,X),assert(fakt(typ,stare_budownictwo))) ;
+    (retract(inuse(typ,stare_budownictwo)),fail).
+regula(metraz,wiecej_niz_3_pokoje) :- not(inuse(metraz,wiecej_niz_3_pokoje)),assert(inuse(metraz,wiecej_niz_3_pokoje)),(fakt(typ,Y),assert(fakt(metraz,wiecej_niz_3_pokoje)));
+    (retract(inuse(metraz,wiecej_niz_3_pokoje)),fail).
+regula(lokalizacja,srednia) :- not(inuse(lokalizacja,srednia)),assert(inuse(lokalizacja,srednia)),(   fakt(metraz,Z),assert(fakt(lokalizacja,srednia)));
+    (retract(inuse(lokalizacja,srednia)),fail).
+regula(cena_za_m2,niska) :- not(inuse(cena_za_m2,niska)),assert(inuse(cena_za_m2,niska)),(   fakt(lokalizacja,W),assert(fakt(cena_za_m2,niska)));(retract(inuse(cena_za_m2,niska)),fail).
+regula(cena_za_m2,bardzo_wysoka) :- not(inuse(cena_za_m2,bardzo_wysoka)),assert(inuse(cena_za_m2,bardzo_wysoka)),(   fakt(decyzja,odrzucic),assert(fakt(cena_za_m2,bardzo_wysoka)));
+    (retract(inuse(cena_za_m2,bardzo_wysoka)),fail).
+regula(cena_za_m2,bardzo_wysoka) :- not(inuse(cena_za_m2,bardzo_wysoka)),assert(inuse(cena_za_m2,bardzo_wysoka)),(   fakt(decyzja,odrzucic),assert(fakt(cena_za_m2,wysoka)));
+    (retract(inuse(cena_za_m2,bardzo_wysoka)),fail).
+
+regula(cena_za_m2,srednia) :- not(inuse(cena_za_m2,srednia)),assert(inuse(cena_za_m2,srednia)),(   fakt(decyzja,rozwazyc),
+    assert(fakt(cena_za_m2,srednia)));(retract(inuse(cena_za_m2,srednia)),fail).
+regula(lokalizacja,obrzeza) :- not(inuse(lokalizacja,obrzeza)),assert(inuse(lokalizacja,obrzeza)),(   fakt(decyzja,rozwazyc),    
+    assert(fakt(lokalizacja,obrzeza)));
+    (retract(inuse(lokalizacja,obrzeza)),fail).
+regula(wykonczenie,srednie) :- not(inuse(wykonczenie,srednie)),assert(inuse(wykonczenie,srednie)),(   fakt(decyzja,rozwazyc),    
+    assert(fakt(wykonczenie,srednie)));
+    (retract(inuse(wykonczenie,srednie)),fail).
+regula(wykonczenie,do_remontu) :- not(inuse(wykonczenie,do_remontu)),assert(inuse(wykonczenie,do_remontu)),(   fakt(decyzja,rozwazyc),   
+    assert(fakt(wykonczenie,do_remontu)));
+    (retract(inuse(wykonczenie,do_remontu)),fail).
+regula(decyzja,kupic) :- not(inuse(decyzja,kupic)),assert(inuse(decyzja,kupic)),(   fakt(decyzja,kupic)
+   );(retract(inuse(decyzja,kupic)),fail).
+
+regula(metraz,dwa_pokoje) :- not(inuse(metraz,dwa_pokoje)),assert(inuse(metraz,dwa_pokoje)),(  
+    assert(fakt(metraz,dwa_pokoje)))
+    ;(retract(inuse(metraz,dwa_pokoje)),fail).
+
+regula(lokalizacja,centrum) :- not(inuse(lokalizacja,centrum)),assert(inuse(lokalizacja,centrum)),(fakt(decyzja,kupic),
+    assert(fakt(lokalizacja,centrum))
+    );(retract(inuse(lokalizacja,centrum)),fail).
+
+regula(wykonczenie,wysoki_standard) :- not(inuse(wykonczenie,wysoki_standard)),assert(inuse(wykonczenie,wysoki_standard)),(  fakt(decyzja,kupic),
+    assert(fakt(wykonczenie,wysoki_standard))
+   );(retract(inuse(wykonczenie,wysoki_standard)),fail).
+
+regula(typ,nowe_budownictwo) :- not(inuse(typ,nowe_budownictwo)),assert(inuse(typ,nowe_budownictwo)),(fakt(decyzja,kupic),
+    assert(fakt(typ,nowe_budownictwo))
+    );(retract(inuse(typ,nowe_budownictwo)),fail).
+
+regula(metraz,kawalerka) :- not(inuse(metraz,kawalerka)),assert(inuse(metraz,kawalerka)),(fakt(decyzja,kupic),
+    assert(fakt(metraz,kawalerka)));(retract(inuse(metraz,kawalerka)),fail).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% SPRAWDZENIA %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+sprawdz(typ,stare_budownictwo):- fakt(typ,stare_budownictwo) ; not(fakt(typ,stare_budownictwo)), regula(typ,stare_budownictwo).
+sprawdz(metraz,wiecej_niz_3_pokoje):- fakt(metraz,wiecej_niz_3_pokoje) ; not(fakt(metraz,wiecej_niz_3_pokoje)), regula(metraz,wiecej_niz_3_pokoje).
+sprawdz(lokalizacja,srednia):- fakt(lokalizacja,srednia) ; not(fakt(lokalizacja,srednia)), regula(lokalizacja,srednia).
+sprawdz(cena_za_m2,niska):- fakt(cena_za_m2,niska) ; not(fakt(cena_za_m2,niska)), regula(cena_za_m2,niska).
+sprawdz(cena_za_m2,bardzo_wysoka):- fakt(cena_za_m2,bardzo_wysoka); not(fakt(cena_za_m2,bardzo_wysoka)),regula(cena_za_m2,bardzo_wysoka).    
+sprawdz(cena_za_m2,wysoka):- fakt(cena_za_m2,wysoka); not(fakt(cena_za_m2,wysoka)),regula(cena_za_m2,wysoka).
+sprawdz(cena_za_m2,srednia):- fakt(cena_za_m2,srednia) ; not(fakt(cena_za_m2,srednia)), regula(cena_za_m2,srednia).
+sprawdz(lokalizacja,obrzeza):- fakt(lokalizacja,obrzeza),not(fakt(lokalizacja,obrzeza)),regula(lokalizacja,obrzeza).
+sprawdz(wykonczenie,srednie):- fakt(wykonczenie,srednie),not(fakt(wykonczenie,srednie)),regula(wykonczenie,srednie).
+sprawdz(wykonczenie,do_remontu):- fakt(wykonczenie,do_remontu),not(fakt(wykonczenie,do_remontu)),regula(wykonczenie,do_remontu).
+sprawdz(metraz,dwa_pokoje):- fakt(metraz,dwa_pokoje) ; not(fakt(metraz,dwa_pokoje)), regula(decyzja,kupic).   
+sprawdz(decyzja,kupic):- fakt(decyzja,kupic) ; not(fakt(decyzja,kupic)), regula(decyzja,kupic).
+sprawdz(lokalizacja,centrum):-
+    fakt(lokalizacja,centrum) ; not(fakt(lokalizacja,centrum)), regula(lokalizacja,centrum).
+sprawdz(metraz,kawalerka):- fakt(metraz,kawalerka) ; not(fakt(metraz,kawalerka)), regula(metraz,kawalerka).   
+sprawdz(typ,nowe_budownictwo):- 
+   fakt(typ,nowe_budownictwo) ; not(fakt(typ,nowe_budownictwo)), regula(typ,nowe_budownictwo).
+sprawdz(wykonczenie,wysoki_standard):- 
+    fakt(wykonczenie,wysoki_standard) ; not(fakt(wykonczenie,wysoki_standard)), regula(wykonczenie,wysoki_standard).
+</div>
+
+<div class="nb-cell markdown" name="md1">
+#Przyklad nr 1 - wnioskowanie wprzód na podstawie faktu - lokalizacja,srednia
+</div>
+
+<div class="nb-cell query" name="q1">
+sprawdz(X,Y).
+</div>
+
+<div class="nb-cell markdown" name="md2">
+#Przyklad nr 2 - wnioskowanie wprzód na podstawie faktu - wykonczenie, srednie
+</div>
+
+<div class="nb-cell query" name="q2">
+sprawdz(X,Y).
+</div>
+
+<div class="nb-cell markdown" name="md3">
+#Przyklad 3 - wnioskowanie w tyl na podstawie przykladu nr 1
+</div>
+
+<div class="nb-cell query" name="q3">
+sprawdz(cena_za_m2,niska).
+</div>
+
+<div class="nb-cell markdown" name="md4">
+#Przyklad 4 - wnioskowanie w tyl na podstawie przykladu nr 1
+</div>
+
+<div class="nb-cell query" name="q4">
+sprawdz(cena_za_m2,wysoka).
+</div>
+
+</div>

@@ -1,0 +1,217 @@
+Typ,Lokalizacja,Metraż,Wykończenie,Cena za metr,Decyzja
+Nowe budownictwo,Centrum,Kawalerka,Wys. standard,Niska,Kupić
+Nowe budownictwo,Centrum,Kawalerka,Wys. standard,Średnia,Kupić
+Nowe budownictwo,Centrum,Kawalerka,Wys. standard,Wysoka,Kupić
+Nowe budownictwo,Centrum,Kawalerka,Wys. standard,Bardzo wysoka,Rozważyć
+Nowe budownictwo,Centrum,Kawalerka,Średnie,Niska,Kupić
+Nowe budownictwo,Centrum,Kawalerka,Średnie,Średnia,Kupić
+Nowe budownictwo,Centrum,Kawalerka,Średnie,Wysoka,Rozważyć
+Nowe budownictwo,Centrum,Kawalerka,Średnie,Bardzo wysoka,Rozważyć
+Nowe budownictwo,Centrum,Kawalerka,Do remontu,Niska,Kupić
+Nowe budownictwo,Centrum,Kawalerka,Do remontu,Średnia,Kupić
+Nowe budownictwo,Centrum,Kawalerka,Do remontu,Wysoka,Rozważyć
+Nowe budownictwo,Centrum,Kawalerka,Do remontu,Bardzo wysoka,Rozważyć
+Nowe budownictwo,Centrum,2-pok,Wys. standard,Niska,Kupić
+Nowe budownictwo,Centrum,2-pok,Wys. standard,Średnia,Kupić
+Nowe budownictwo,Centrum,2-pok,Wys. standard,Wysoka,Kupić
+Nowe budownictwo,Centrum,2-pok,Wys. standard,Bardzo wysoka,Rozważyć
+Nowe budownictwo,Centrum,2-pok,Średnie,Niska,Kupić
+Nowe budownictwo,Centrum,2-pok,Średnie,Średnia,Rozważyć
+Nowe budownictwo,Centrum,2-pok,Średnie,Wysoka,Rozważyć
+Nowe budownictwo,Centrum,2-pok,Średnie,Bardzo wysoka,Rozważyć
+Nowe budownictwo,Centrum,2-pok,Do remontu,Niska,Kupić
+Nowe budownictwo,Centrum,2-pok,Do remontu,Średnia,Rozważyć
+Nowe budownictwo,Centrum,2-pok,Do remontu,Wysoka,Rozważyć
+Nowe budownictwo,Centrum,2-pok,Do remontu,Bardzo wysoka,Rozważyć
+Nowe budownictwo,Centrum,>3pok,Wys. standard,Niska,Kupić
+Nowe budownictwo,Centrum,>3pok,Wys. standard,Średnia,Kupić
+Nowe budownictwo,Centrum,>3pok,Wys. standard,Wysoka,Rozważyć
+Nowe budownictwo,Centrum,>3pok,Wys. standard,Bardzo wysoka,Rozważyć
+Nowe budownictwo,Centrum,>3pok,Średnie,Niska,Kupić
+Nowe budownictwo,Centrum,>3pok,Średnie,Średnia,Kupić
+Nowe budownictwo,Centrum,>3pok,Średnie,Wysoka,Rozważyć
+Nowe budownictwo,Centrum,>3pok,Średnie,Bardzo wysoka,Odrzucić
+Nowe budownictwo,Centrum,>3pok,Do remontu,Niska,Kupić
+Nowe budownictwo,Centrum,>3pok,Do remontu,Średnia,Kupić
+Nowe budownictwo,Centrum,>3pok,Do remontu,Wysoka,Rozważyć
+Nowe budownictwo,Centrum,>3pok,Do remontu,Bardzo wysoka,Odrzucić
+Nowe budownictwo,Średnia,Kawalerka,Wys. standard,Niska,Kupić
+Nowe budownictwo,Średnia,Kawalerka,Wys. standard,Średnia,Kupić
+Nowe budownictwo,Średnia,Kawalerka,Wys. standard,Wysoka,Kupić
+Nowe budownictwo,Średnia,Kawalerka,Wys. standard,Bardzo wysoka,Rozważyć
+Nowe budownictwo,Średnia,Kawalerka,Średnie,Niska,Kupić
+Nowe budownictwo,Średnia,Kawalerka,Średnie,Średnia,Rozważyć
+Nowe budownictwo,Średnia,Kawalerka,Średnie,Wysoka,Rozważyć
+Nowe budownictwo,Średnia,Kawalerka,Średnie,Bardzo wysoka,Odrzucić
+Nowe budownictwo,Średnia,Kawalerka,Do remontu,Niska,Kupić
+Nowe budownictwo,Średnia,Kawalerka,Do remontu,Średnia,Rozważyć
+Nowe budownictwo,Średnia,Kawalerka,Do remontu,Wysoka,Odrzucić
+Nowe budownictwo,Średnia,Kawalerka,Do remontu,Bardzo wysoka,Odrzucić
+Nowe budownictwo,Średnia,2-pok,Wys. standard,Niska,Kupić
+Nowe budownictwo,Średnia,2-pok,Wys. standard,Średnia,Kupić
+Nowe budownictwo,Średnia,2-pok,Wys. standard,Wysoka,Kupić
+Nowe budownictwo,Średnia,2-pok,Wys. standard,Bardzo wysoka,Rozważyć
+Nowe budownictwo,Średnia,2-pok,Średnie,Niska,Kupić
+Nowe budownictwo,Średnia,2-pok,Średnie,Średnia,Rozważyć
+Nowe budownictwo,Średnia,2-pok,Średnie,Wysoka,Odrzucić
+Nowe budownictwo,Średnia,2-pok,Średnie,Bardzo wysoka,Odrzucić
+Nowe budownictwo,Średnia,2-pok,Do remontu,Niska,Kupić
+Nowe budownictwo,Średnia,2-pok,Do remontu,Średnia,Rozważyć
+Nowe budownictwo,Średnia,2-pok,Do remontu,Wysoka,Odrzucić
+Nowe budownictwo,Średnia,2-pok,Do remontu,Bardzo wysoka,Odrzucić
+Nowe budownictwo,Średnia,>3pok,Wys. standard,Niska,Kupić
+Nowe budownictwo,Średnia,>3pok,Wys. standard,Średnia,Rozważyć
+Nowe budownictwo,Średnia,>3pok,Wys. standard,Wysoka,Rozważyć
+Nowe budownictwo,Średnia,>3pok,Wys. standard,Bardzo wysoka,Rozważyć
+Nowe budownictwo,Średnia,>3pok,Średnie,Niska,Kupić
+Nowe budownictwo,Średnia,>3pok,Średnie,Średnia,Rozważyć
+Nowe budownictwo,Średnia,>3pok,Średnie,Wysoka,Rozważyć
+Nowe budownictwo,Średnia,>3pok,Średnie,Bardzo wysoka,Odrzucić
+Nowe budownictwo,Średnia,>3pok,Do remontu,Niska,Kupić
+Nowe budownictwo,Średnia,>3pok,Do remontu,Średnia,Rozważyć
+Nowe budownictwo,Średnia,>3pok,Do remontu,Wysoka,Odrzucić
+Nowe budownictwo,Średnia,>3pok,Do remontu,Bardzo wysoka,Odrzucić
+Nowe budownictwo,Obrzeża,Kawalerka,Wys. standard,Niska,Kupić
+Nowe budownictwo,Obrzeża,Kawalerka,Wys. standard,Średnia,Rozważyć
+Nowe budownictwo,Obrzeża,Kawalerka,Wys. standard,Wysoka,Rozważyć
+Nowe budownictwo,Obrzeża,Kawalerka,Wys. standard,Bardzo wysoka,Odrzucić
+Nowe budownictwo,Obrzeża,Kawalerka,Średnie,Niska,Kupić
+Nowe budownictwo,Obrzeża,Kawalerka,Średnie,Średnia,Rozważyć
+Nowe budownictwo,Obrzeża,Kawalerka,Średnie,Wysoka,Odrzucić
+Nowe budownictwo,Obrzeża,Kawalerka,Średnie,Bardzo wysoka,Odrzucić
+Nowe budownictwo,Obrzeża,Kawalerka,Do remontu,Niska,Rozważyć
+Nowe budownictwo,Obrzeża,Kawalerka,Do remontu,Średnia,Rozważyć
+Nowe budownictwo,Obrzeża,Kawalerka,Do remontu,Wysoka,Odrzucić
+Nowe budownictwo,Obrzeża,Kawalerka,Do remontu,Bardzo wysoka,Odrzucić
+Nowe budownictwo,Obrzeża,2-pok,Wys. standard,Niska,Kupić
+Nowe budownictwo,Obrzeża,2-pok,Wys. standard,Średnia,Rozważyć
+Nowe budownictwo,Obrzeża,2-pok,Wys. standard,Wysoka,Rozważyć
+Nowe budownictwo,Obrzeża,2-pok,Wys. standard,Bardzo wysoka,Odrzucić
+Nowe budownictwo,Obrzeża,2-pok,Średnie,Niska,Rozważyć
+Nowe budownictwo,Obrzeża,2-pok,Średnie,Średnia,Rozważyć
+Nowe budownictwo,Obrzeża,2-pok,Średnie,Wysoka,Odrzucić
+Nowe budownictwo,Obrzeża,2-pok,Średnie,Bardzo wysoka,Odrzucić
+Nowe budownictwo,Obrzeża,2-pok,Do remontu,Niska,Rozważyć
+Nowe budownictwo,Obrzeża,2-pok,Do remontu,Średnia,Odrzucić
+Nowe budownictwo,Obrzeża,2-pok,Do remontu,Wysoka,Odrzucić
+Nowe budownictwo,Obrzeża,2-pok,Do remontu,Bardzo wysoka,Odrzucić
+Nowe budownictwo,Obrzeża,>3pok,Wys. standard,Niska,Kupić
+Nowe budownictwo,Obrzeża,>3pok,Wys. standard,Średnia,Rozważyć
+Nowe budownictwo,Obrzeża,>3pok,Wys. standard,Wysoka,Odrzucić
+Nowe budownictwo,Obrzeża,>3pok,Wys. standard,Bardzo wysoka,Odrzucić
+Nowe budownictwo,Obrzeża,>3pok,Średnie,Niska,Rozważyć
+Nowe budownictwo,Obrzeża,>3pok,Średnie,Średnia,Rozważyć
+Nowe budownictwo,Obrzeża,>3pok,Średnie,Wysoka,Odrzucić
+Nowe budownictwo,Obrzeża,>3pok,Średnie,Bardzo wysoka,Odrzucić
+Nowe budownictwo,Obrzeża,>3pok,Do remontu,Niska,Odrzucić
+Nowe budownictwo,Obrzeża,>3pok,Do remontu,Średnia,Odrzucić
+Nowe budownictwo,Obrzeża,>3pok,Do remontu,Wysoka,Odrzucić
+Nowe budownictwo,Obrzeża,>3pok,Do remontu,Bardzo wysoka,Odrzucić
+Stare budownictwo,Centrum,Kawalerka,Wys. standard,Niska,Kupić
+Stare budownictwo,Centrum,Kawalerka,Wys. standard,Średnia,Kupić
+Stare budownictwo,Centrum,Kawalerka,Wys. standard,Wysoka,Rozważyć
+Stare budownictwo,Centrum,Kawalerka,Wys. standard,Bardzo wysoka,Rozważyć
+Stare budownictwo,Centrum,Kawalerka,Średnie,Niska,Kupić
+Stare budownictwo,Centrum,Kawalerka,Średnie,Średnia,Kupić
+Stare budownictwo,Centrum,Kawalerka,Średnie,Wysoka,Rozważyć
+Stare budownictwo,Centrum,Kawalerka,Średnie,Bardzo wysoka,Odrzucić
+Stare budownictwo,Centrum,Kawalerka,Do remontu,Niska,Kupić
+Stare budownictwo,Centrum,Kawalerka,Do remontu,Średnia,Rozważyć
+Stare budownictwo,Centrum,Kawalerka,Do remontu,Wysoka,Rozważyć
+Stare budownictwo,Centrum,Kawalerka,Do remontu,Bardzo wysoka,Odrzucić
+Stare budownictwo,Centrum,2-pok,Wys. standard,Niska,Kupić
+Stare budownictwo,Centrum,2-pok,Wys. standard,Średnia,Kupić
+Stare budownictwo,Centrum,2-pok,Wys. standard,Wysoka,Rozważyć
+Stare budownictwo,Centrum,2-pok,Wys. standard,Bardzo wysoka,Rozważyć
+Stare budownictwo,Centrum,2-pok,Średnie,Niska,Kupić
+Stare budownictwo,Centrum,2-pok,Średnie,Średnia,Rozważyć
+Stare budownictwo,Centrum,2-pok,Średnie,Wysoka,Rozważyć
+Stare budownictwo,Centrum,2-pok,Średnie,Bardzo wysoka,Odrzucić
+Stare budownictwo,Centrum,2-pok,Do remontu,Niska,Kupić
+Stare budownictwo,Centrum,2-pok,Do remontu,Średnia,Rozważyć
+Stare budownictwo,Centrum,2-pok,Do remontu,Wysoka,Odrzucić
+Stare budownictwo,Centrum,2-pok,Do remontu,Bardzo wysoka,Odrzucić
+Stare budownictwo,Centrum,>3pok,Wys. standard,Niska,Kupić
+Stare budownictwo,Centrum,>3pok,Wys. standard,Średnia,Kupić
+Stare budownictwo,Centrum,>3pok,Wys. standard,Wysoka,Rozważyć
+Stare budownictwo,Centrum,>3pok,Wys. standard,Bardzo wysoka,Odrzucić
+Stare budownictwo,Centrum,>3pok,Średnie,Niska,Kupić
+Stare budownictwo,Centrum,>3pok,Średnie,Średnia,Kupić
+Stare budownictwo,Centrum,>3pok,Średnie,Wysoka,Odrzucić
+Stare budownictwo,Centrum,>3pok,Średnie,Bardzo wysoka,Odrzucić
+Stare budownictwo,Centrum,>3pok,Do remontu,Niska,Kupić
+Stare budownictwo,Centrum,>3pok,Do remontu,Średnia,Rozważyć
+Stare budownictwo,Centrum,>3pok,Do remontu,Wysoka,Odrzucić
+Stare budownictwo,Centrum,>3pok,Do remontu,Bardzo wysoka,Odrzucić
+Stare budownictwo,Średnia,Kawalerka,Wys. standard,Niska,Kupić
+Stare budownictwo,Średnia,Kawalerka,Wys. standard,Średnia,Kupić
+Stare budownictwo,Średnia,Kawalerka,Wys. standard,Wysoka,Rozważyć
+Stare budownictwo,Średnia,Kawalerka,Wys. standard,Bardzo wysoka,Odrzucić
+Stare budownictwo,Średnia,Kawalerka,Średnie,Niska,Kupić
+Stare budownictwo,Średnia,Kawalerka,Średnie,Średnia,Rozważyć
+Stare budownictwo,Średnia,Kawalerka,Średnie,Wysoka,Odrzucić
+Stare budownictwo,Średnia,Kawalerka,Średnie,Bardzo wysoka,Odrzucić
+Stare budownictwo,Średnia,Kawalerka,Do remontu,Niska,Kupić
+Stare budownictwo,Średnia,Kawalerka,Do remontu,Średnia,Rozważyć
+Stare budownictwo,Średnia,Kawalerka,Do remontu,Wysoka,Odrzucić
+Stare budownictwo,Średnia,Kawalerka,Do remontu,Bardzo wysoka,Odrzucić
+Stare budownictwo,Średnia,2-pok,Wys. standard,Niska,Kupić
+Stare budownictwo,Średnia,2-pok,Wys. standard,Średnia,Kupić
+Stare budownictwo,Średnia,2-pok,Wys. standard,Wysoka,Rozważyć
+Stare budownictwo,Średnia,2-pok,Wys. standard,Bardzo wysoka,Odrzucić
+Stare budownictwo,Średnia,2-pok,Średnie,Niska,Kupić
+Stare budownictwo,Średnia,2-pok,Średnie,Średnia,Rozważyć
+Stare budownictwo,Średnia,2-pok,Średnie,Wysoka,Odrzucić
+Stare budownictwo,Średnia,2-pok,Średnie,Bardzo wysoka,Odrzucić
+Stare budownictwo,Średnia,2-pok,Do remontu,Niska,Kupić
+Stare budownictwo,Średnia,2-pok,Do remontu,Średnia,Rozważyć
+Stare budownictwo,Średnia,2-pok,Do remontu,Wysoka,Odrzucić
+Stare budownictwo,Średnia,2-pok,Do remontu,Bardzo wysoka,Odrzucić
+Stare budownictwo,Średnia,>3pok,Wys. standard,Niska,Kupić
+Stare budownictwo,Średnia,>3pok,Wys. standard,Średnia,Rozważyć
+Stare budownictwo,Średnia,>3pok,Wys. standard,Wysoka,Odrzucić
+Stare budownictwo,Średnia,>3pok,Wys. standard,Bardzo wysoka,Odrzucić
+Stare budownictwo,Średnia,>3pok,Średnie,Niska,Rozważyć
+Stare budownictwo,Średnia,>3pok,Średnie,Średnia,Rozważyć
+Stare budownictwo,Średnia,>3pok,Średnie,Wysoka,Odrzucić
+Stare budownictwo,Średnia,>3pok,Średnie,Bardzo wysoka,Odrzucić
+Stare budownictwo,Średnia,>3pok,Do remontu,Niska,Rozważyć
+Stare budownictwo,Średnia,>3pok,Do remontu,Średnia,Rozważyć
+Stare budownictwo,Średnia,>3pok,Do remontu,Wysoka,Odrzucić
+Stare budownictwo,Średnia,>3pok,Do remontu,Bardzo wysoka,Odrzucić
+Stare budownictwo,Obrzeża,Kawalerka,Wys. standard,Niska,Kupić
+Stare budownictwo,Obrzeża,Kawalerka,Wys. standard,Średnia,Rozważyć
+Stare budownictwo,Obrzeża,Kawalerka,Wys. standard,Wysoka,Odrzucić
+Stare budownictwo,Obrzeża,Kawalerka,Wys. standard,Bardzo wysoka,Odrzucić
+Stare budownictwo,Obrzeża,Kawalerka,Średnie,Niska,Rozważyć
+Stare budownictwo,Obrzeża,Kawalerka,Średnie,Średnia,Odrzucić
+Stare budownictwo,Obrzeża,Kawalerka,Średnie,Wysoka,Odrzucić
+Stare budownictwo,Obrzeża,Kawalerka,Średnie,Bardzo wysoka,Odrzucić
+Stare budownictwo,Obrzeża,Kawalerka,Do remontu,Niska,Rozważyć
+Stare budownictwo,Obrzeża,Kawalerka,Do remontu,Średnia,Odrzucić
+Stare budownictwo,Obrzeża,Kawalerka,Do remontu,Wysoka,Odrzucić
+Stare budownictwo,Obrzeża,Kawalerka,Do remontu,Bardzo wysoka,Odrzucić
+Stare budownictwo,Obrzeża,2-pok,Wys. standard,Niska,Rozważyć
+Stare budownictwo,Obrzeża,2-pok,Wys. standard,Średnia,Rozważyć
+Stare budownictwo,Obrzeża,2-pok,Wys. standard,Wysoka,Odrzucić
+Stare budownictwo,Obrzeża,2-pok,Wys. standard,Bardzo wysoka,Odrzucić
+Stare budownictwo,Obrzeża,2-pok,Średnie,Niska,Rozważyć
+Stare budownictwo,Obrzeża,2-pok,Średnie,Średnia,Rozważyć
+Stare budownictwo,Obrzeża,2-pok,Średnie,Wysoka,Odrzucić
+Stare budownictwo,Obrzeża,2-pok,Średnie,Bardzo wysoka,Odrzucić
+Stare budownictwo,Obrzeża,2-pok,Do remontu,Niska,Odrzucić
+Stare budownictwo,Obrzeża,2-pok,Do remontu,Średnia,Odrzucić
+Stare budownictwo,Obrzeża,2-pok,Do remontu,Wysoka,Odrzucić
+Stare budownictwo,Obrzeża,2-pok,Do remontu,Bardzo wysoka,Odrzucić
+Stare budownictwo,Obrzeża,>3pok,Wys. standard,Niska,Rozważyć
+Stare budownictwo,Obrzeża,>3pok,Wys. standard,Średnia,Odrzucić
+Stare budownictwo,Obrzeża,>3pok,Wys. standard,Wysoka,Odrzucić
+Stare budownictwo,Obrzeża,>3pok,Wys. standard,Bardzo wysoka,Odrzucić
+Stare budownictwo,Obrzeża,>3pok,Średnie,Niska,Odrzucić
+Stare budownictwo,Obrzeża,>3pok,Średnie,Średnia,Odrzucić
+Stare budownictwo,Obrzeża,>3pok,Średnie,Wysoka,Odrzucić
+Stare budownictwo,Obrzeża,>3pok,Średnie,Bardzo wysoka,Odrzucić
+Stare budownictwo,Obrzeża,>3pok,Do remontu,Niska,Odrzucić
+Stare budownictwo,Obrzeża,>3pok,Do remontu,Średnia,Odrzucić
+Stare budownictwo,Obrzeża,>3pok,Do remontu,Wysoka,Odrzucić
+Stare budownictwo,Obrzeża,>3pok,Do remontu,Bardzo wysoka,Odrzucić
